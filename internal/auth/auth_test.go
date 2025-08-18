@@ -12,7 +12,7 @@ func TestGetAPIKey(t *testing.T) {
 	 expected string
 	 error    error
 	}{
-	 {name: "key", header: http.Header{"Authorization": []string{"ApiKey 123"}}, expected: "1", error: nil},
+	 {name: "key", header: http.Header{"Authorization": []string{"ApiKey 123"}}, expected: "123", error: nil},
 	 {name: "empty", header: http.Header{"Authorization": []string{}}, expected: "", error: ErrNoAuthHeaderIncluded},
 	}
 
