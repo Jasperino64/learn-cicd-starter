@@ -1,30 +1,62 @@
 package auth
 
 import (
+	"fmt"
 	"net/http"
+	"strings"
 	"testing"
 )
 
 func TestGetAPIKey(t *testing.T) {
 	tests := []struct {
-	 name     string
-	 header  http.Header
-	 expected string
-	 error    error
+		key       string
+		value     string
+		expect    string
+		expectErr string
 	}{
-	 {name: "key", header: http.Header{"Authorization": []string{"ApiKey 123"}}, expected: "123", error: nil},
-	 {name: "empty", header: http.Header{"Authorization": []string{}}, expected: "", error: ErrNoAuthHeaderIncluded},
+		{
+			expectErr: "no authorization header",
+		},
+		{
+			key:       "Authorization",
+			expectErr: "no authorization header",
+		},
+		{
+			key:       "Authorization",
+			value:     "-",
+			expectErr: "malformed authorization header",
+		},
+		{
+			key:       "Authorization",
+			value:     "Bearer xxxxxx",
+			expectErr: "malformed authorization header",
+		},
+		{
+			key:       "Authorization",
+			value:     "ApiKey xxxxxx",
+			expect:    "xxxxxx",
+			expectErr: "not expecting an error",
+		},
 	}
 
-	for _, tt := range tests {
- 			t.Run(tt.name, func(t *testing.T) {
- 				got, err := GetAPIKey(tt.header)
- 				if (err != tt.error) {
- 					t.Errorf("GetAPIKey(%q) error = %v; want %v", tt.header.Get("Authorization"), err, tt.error)
- 				}
- 				if got != tt.expected {
- 					t.Errorf("GetAPIKey(%q) = %q; want %q", tt.header.Get("Authorization"), got, tt.expected)
- 				}
- 			})
+	for i, test := range tests {
+		t.Run(fmt.Sprintf("TestGetAPIKey Case #%v:", i), func(t *testing.T) {
+			header := http.Header{}
+			header.Add(test.key, test.value)
+
+			output, err := GetAPIKey(header)
+			if err != nil {
+				if strings.Contains(err.Error(), test.expectErr) {
+					return
+				}
+				t.Errorf("Unexpected: TestGetAPIKey:%v\n", err)
+				return
+			}
+
+			if output != test.expect {
+				t.Errorf("Unexpected: TestGetAPIKey:%s", output)
+				return
+			}
+		})
 	}
 }
