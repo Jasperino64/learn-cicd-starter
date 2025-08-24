@@ -1,0 +1,760 @@
+    1  sudo
+    2  su
+    3  sudo ls
+    4  sudo  rm -rf /usr/local/go && tar -C /usr/local -xzf go1.24.4.linux-amd64.tar.gz
+    5  # For Linux/WSL
+    6  echo 'export PATH=$PATH:$HOME/.local/opt/go/bin' >> ~/.bashrc
+    7  # next, reload your shell configuration
+    8  source ~/.bashrc
+    9  go install github.com/bootdotdev/bootdev@latest
+   10  curl -sS https://webi.sh/golang | sh
+   11  source ~/.config/envman/PATH.env
+   12  go install github.com/bootdotdev/bootdev@latest
+   13  cd httpserver/
+   14  go mod init github.com/Jasperino64/goserver
+   15  cd ..
+   16  cd goserver/
+   17  go run .
+   18  bootdev run 20709716-4d7c-47fe-b182-9bccf8436ddc
+   19  bootdev login
+   20  bootdev run 20709716-4d7c-47fe-b182-9bccf8436ddc
+   21  c
+   22  cd
+   23  pwd
+   24  mkdir workspace
+   25  bootdev run 20709716-4d7c-47fe-b182-9bccf8436ddc
+   26  bootdev run a13ffa72-18b9-49f7-81a9-c5a17d007b3a
+   27  bootdev run a13ffa72-18b9-49f7-81a9-c5a17d007b3a -s
+   28  bootdev run d1c4962d-f55e-4f0f-ac9c-913db8ef8ae8
+   29  bootdev run d1c4962d-f55e-4f0f-ac9c-913db8ef8ae8 -s
+   30  bootdev run a13ffa72-18b9-49f7-81a9-c5a17d007b3a
+   31  cd goserver/
+   32  go run.
+   33  go run .
+   34  git
+   35  bootdev run 0b877128-7dd0-4643-8fef-5d8faf9a1cc6
+   36  bootdev run 0b877128-7dd0-4643-8fef-5d8faf9a1cc6 -s
+   37  cd goserver/
+   38  go run .
+   39  bootdev run 892b38f7-d154-4591-ac63-a9fbc2a38187
+   40  bootdev run 892b38f7-d154-4591-ac63-a9fbc2a38187 -s
+   41  bootdev run 892b38f7-d154-4591-ac63-a9fbc2a38187
+   42  cd goserver/
+   43  go run .
+   44  cd goserver/
+   45  go run .
+   46  cd goserver/
+   47  go run .
+   48  cd goserver/
+   49  go run test
+   50  go test
+   51  go test ./...
+   52  go test -v ./...
+   53  go run .
+   54  go install github.com/pressly/goose/v3/cmd/goose@latest
+   55  cd sql/schema/
+   56  goose postgres postgres://postgres:postgres@localhost:5432/chirpy up
+   57  bootdev run ea036a3f-6fa3-446a-ba20-c04cb913e12a
+   58  bootdev run ea036a3f-6fa3-446a-ba20-c04cb913e12a -s
+   59  bootdev run 374ef0f7-1d2d-40b8-8cef-14e9ffd033ab
+   60  bootdev run 374ef0f7-1d2d-40b8-8cef-14e9ffd033ab -s
+   61  bootdev run 7cde3fa8-f38a-444e-92a6-83166a905cb0
+   62  bootdev run 7cde3fa8-f38a-444e-92a6-83166a905cb0 -s
+   63  bootdev run 374ef0f7-1d2d-40b8-8cef-14e9ffd033ab
+   64  bootdev run 7cde3fa8-f38a-444e-92a6-83166a905cb0
+   65  sudo apt update
+   66  sudo apt install postgresql postgresql-contrib
+   67  psql --version
+   68  sudo passwd postgres
+   69  bootdev run c3e215a5-1d8f-437b-9f89-3606118800ec
+   70  psql --version
+   71  sudo -u postgres psql
+   72  bootdev run c3e215a5-1d8f-437b-9f89-3606118800ec
+   73  bootdev run c3e215a5-1d8f-437b-9f89-3606118800ec -s
+   74  bootdev run ea036a3f-6fa3-446a-ba20-c04cb913e12a
+   75  bootdev run ea036a3f-6fa3-446a-ba20-c04cb913e12a -s
+   76  psql chirpy
+   77  psl
+   78  sudo -u postgres psql
+   79  cd goserver/
+   80  go install github.com/sqlc-dev/sqlc/cmd/sqlc@latest
+   81  sqlc generate
+   82  go get github.com/google/uuid
+   83  go get github.com/lib/pq
+   84  go get github.com/joho/godotenv
+   85  bootdev run e5bddf3d-d96b-487e-97e6-7a5aa06b1ee1
+   86  bootdev run e5bddf3d-d96b-487e-97e6-7a5aa06b1ee1 -s
+   87  bootdev run e5bddf3d-d96b-487e-97e6-7a5aa06b1ee1 
+   88  bootdev run e5bddf3d-d96b-487e-97e6-7a5aa06b1ee1 -s
+   89  bootdev run 0820daf4-4006-425a-a50c-f45c0eb97d06
+   90  bootdev run 0820daf4-4006-425a-a50c-f45c0eb97d06 -s
+   91  bootdev run 0820daf4-4006-425a-a50c-f45c0eb97d06
+   92  go mod tidy
+   93  cd goserver/
+   94  go mod tidy
+   95  sqlc generate
+   96  echo "# goserver" >> README.md
+   97  git init
+   98  git add README.md
+   99  git commit -m "first commit"
+  100  git branch -M main
+  101  git remote add origin https://github.com/Jasperino64/goserver.git
+  102  git push -u origin main
+  103  git config --global user.email "jasper.s.chen@gmail.com"
+  104  git config --global user.name "Jasper Chen"
+  105  echo "# goserver" >> README.md
+  106  git init
+  107  git add README.md
+  108  git commit -m "first commit"
+  109  git branch -M main
+  110  git remote add origin https://github.com/Jasperino64/goserver.git
+  111  git push -u origin main
+  112  git add .
+  113  git commit -m 1
+  114  git push
+  115  go run .
+  116  [A
+  117  go run .
+  118  sqlc
+  119  sqlc generate
+  120  go run .
+  121  pushd sql/schema/
+  122  goose postgres postgres://postgres:postgres@localhost:5432/chirpy up
+  123  popd
+  124  sqlc generate
+  125  go run .
+  126  sqlc generate
+  127  go run .
+  128  sqlc generate
+  129  go run .
+  130  pushd sql/schema/
+  131  goose postgres postgres://postgres:postgres@localhost:5432/chirpy up
+  132  goose postgres postgres://postgres:postgres@localhost:5432/chirpy down
+  133  goose postgres postgres://postgres:postgres@localhost:5432/chirpy up
+  134  goose postgres postgres://postgres:postgres@localhost:5432/chirpy down
+  135  goose postgres postgres://postgres:postgres@localhost:5432/chirpy up
+  136  goose postgres postgres://postgres:postgres@localhost:5432/chirpy down
+  137  goose postgres postgres://postgres:postgres@localhost:5432/chirpy up
+  138  go get golang.org/x/crypto/bcrypt
+  139  go test -v ./...
+  140  popd
+  141  go test -v ./...
+  142  sqlc generate
+  143  go run .
+  144  sqlc generate
+  145  go run .
+  146  go mod tidy
+  147  git add .
+  148  git commit -m password
+  149  git push
+  150  bootdev run acf357f0-ec20-429f-99ec-265963c2fedf
+  151  bootdev run acf357f0-ec20-429f-99ec-265963c2fedf -s
+  152  bootdev run acf357f0-ec20-429f-99ec-265963c2fedf
+  153  bootdev run acf357f0-ec20-429f-99ec-265963c2fedf -s
+  154  bootdev run 341b80d4-556f-4c5b-8afc-ffd12d5238c2
+  155  bootdev run 341b80d4-556f-4c5b-8afc-ffd12d5238c2 -s
+  156  bootdev run 0a07a4a3-c11f-429f-ac70-52fa2e016bc0
+  157  bootdev run 0a07a4a3-c11f-429f-ac70-52fa2e016bc0 -s
+  158  sudo -u postgres psql
+  159  bootdev run 294e5c16-d1e8-4836-871c-dedc98581236
+  160  bootdev run 294e5c16-d1e8-4836-871c-dedc98581236 -s
+  161  go get -u github.com/golang-jwt/jwt/v5
+  162  go test -v ./...
+  163  bootdev run be93db0d-4c6d-49cf-b56d-ba22392eb160
+  164  bootdev run be93db0d-4c6d-49cf-b56d-ba22392eb160 -s
+  165  go test -v ./...
+  166  openssl rand -base64 64
+  167  go run .
+  168  go test ./...
+  169  go test -v ./...
+  170  go run .
+  171  go test -v ./...
+  172  bootdev run 0689e0d0-bdb1-4cc8-b577-f0dd0535ad00
+  173  bootdev run 0689e0d0-bdb1-4cc8-b577-f0dd0535ad00 -s
+  174  bootdev run f7285cef-5185-4b15-b5fc-9533ccaafe8a
+  175  bootdev run f7285cef-5185-4b15-b5fc-9533ccaafe8a -s
+  176  bootdev run f7285cef-5185-4b15-b5fc-9533ccaafe8a
+  177  go log
+  178  git log
+  179  git add .
+  180  git commit -m jwt
+  181  git push
+  182  pushd sql/schema/
+  183  goose postgres postgres://postgres:postgres@localhost:5432/chirpy up
+  184  popd
+  185  sqlc generate
+  186  pushd sql/schema/
+  187  goose postgres postgres://postgres:postgres@localhost:5432/chirpy down
+  188  goose postgres postgres://postgres:postgres@localhost:5432/chirpy up
+  189  popd
+  190  chmod 770 migrate.sh 
+  191  ./migrate.sh 
+  192  sqlc generate
+  193  go run .
+  194  sqlc generate
+  195  go run .
+  196  sqlc generate
+  197  go run .
+  198  sqlc generate
+  199  go run .
+  200  sqlc generate
+  201  go run .
+  202  sqlc generate
+  203  go run .
+  204  sqlc generate
+  205  go run .
+  206  sqlc generate
+  207  go run .
+  208  bootdev run be14c814-e6c2-4b96-a361-e33bcfe71f00
+  209  bootdev run be14c814-e6c2-4b96-a361-e33bcfe71f00 -s
+  210  bootdev run 61628ee7-a227-45a2-ab79-2721a52db32a
+  211  bootdev run 61628ee7-a227-45a2-ab79-2721a52db32a -s
+  212  git add .
+  213  git commit
+  214  git commit -m "Update password and delete chirp"
+  215  git push
+  216  go run .
+  217  git add .
+  218  git status
+  219  git commit -m "separate files""
+  220  git commit -m "separate files"
+  221  git push
+  222  bootdev run 1304e939-bf50-48d3-a351-b35faafc267d
+  223  bootdev run 1304e939-bf50-48d3-a351-b35faafc267d -s
+  224  bootdev run eb86a031-f0f3-4939-9221-7112e5d272cf
+  225  bootdev run 1304e939-bf50-48d3-a351-b35faafc267d -s
+  226  bootdev run eb86a031-f0f3-4939-9221-7112e5d272cf
+  227  bootdev run eb86a031-f0f3-4939-9221-7112e5d272cf -s
+  228  bootdev run c1a4f8aa-de85-45fe-9e70-e49a98e14e3a
+  229  bootdev run c1a4f8aa-de85-45fe-9e70-e49a98e14e3a -s
+  230  ./migrate.sh 
+  231  goose postgres postgres://postgres:postgres@localhost:5432/chirpy up
+  232  ./migrate.sh 
+  233  pushd sql/schema/
+  234  goose postgres postgres://postgres:postgres@localhost:5432/chirpy down
+  235  goose postgres postgres://postgres:postgres@localhost:5432/chirpy up
+  236  popd
+  237  ./migrate.sh 
+  238  go run .
+  239  ./migrate.sh 
+  240  go run .
+  241  git add .
+  242  git commit -m "red chirpy"
+  243  git push
+  244  git mod clea
+  245  git mod clean
+  246  go tidy
+  247  go mod tidy
+  248  git add .
+  249  git commit -m "go.mod"
+  250  go run .
+  251  sqlc generate
+  252  go run .
+  253  git add .
+  254  git commit -m done
+  255  git push
+  256  cd ..
+  257  git clone https://github.com/bootdotdev/learn-file-storage-s3-golang-starter.git learn-file-storage-s3-golang
+  258  cd learn-file-storage-s3-golang
+  259  cp .env.example .env
+  260  go run .
+  261  sudo apt install gcc
+  262  go run .
+  263  node --version
+  264  cd ..
+  265  node --version
+  266  cd ..
+  267  mkdir heifer
+  268  cd heifer
+  269  nvm use
+  270  nvm install
+  271  node --version
+  272  bootdev run e67b340a-6a1d-488f-97e7-51284e4396fc
+  273  bootdev run e67b340a-6a1d-488f-97e7-51284e4396fc -s
+  274  bootdev run 2f20da66-64d8-47b4-8678-4a95cd06767a
+  275  bootdev run 2f20da66-64d8-47b4-8678-4a95cd06767a -s
+  276  bootdev run 43acdbe6-abec-4648-ae79-3842066a03ad
+  277  bootdev run 43acdbe6-abec-4648-ae79-3842066a03ad -s
+  278  # Download and install nvm:
+  279  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+  280  # in lieu of restarting the shell
+  281  \. "$HOME/.nvm/nvm.sh"
+  282  # Download and install Node.js:
+  283  nvm install 22
+  284  # Verify the Node.js version:
+  285  node -v # Should print "v22.17.1".
+  286  nvm current # Should print "v22.17.1".
+  287  # Verify npm version:
+  288  npm -v # Should print "10.9.2".
+  289  npm init
+  290  npm run start
+  291  bootdev run d5eaa97c-6b65-4983-a090-79868106a152
+  292  bootdev run d5eaa97c-6b65-4983-a090-79868106a152 -s
+  293  npm i -D @babel/core @babel/cli @babel/preset-env
+  294  npx babel main.js --out-file main.compiled.js
+  295  bootdev run e7f52c3b-6a18-4d77-ad69-e861ec5c1cb1
+  296  npx babel main.js --out-file main.compiled.js
+  297  bootdev run e7f52c3b-6a18-4d77-ad69-e861ec5c1cb1
+  298  npx babel main.js --out-file main.compiled.js
+  299  bootdev run e7f52c3b-6a18-4d77-ad69-e861ec5c1cb1
+  300  bootdev run e7f52c3b-6a18-4d77-ad69-e861ec5c1cb1 -s
+  301  node main.js
+  302  bootdev run a7724be8-c98a-4747-b34b-fdc6dac72568
+  303  bootdev run a7724be8-c98a-4747-b34b-fdc6dac72568 -s
+  304  node strict.js 
+  305  bootdev run 6dcdc949-483d-4cac-b7c7-4cd6df39e180
+  306  bootdev run 6dcdc949-483d-4cac-b7c7-4cd6df39e180  -s
+  307  node main.js
+  308  bootdev run 04c574bc-8c05-4a60-aea1-cfcaad0ec611
+  309  bootdev run 6dcdc949-483d-4cac-b7c7-4cd6df39e180  -s
+  310  bootdev run 04c574bc-8c05-4a60-aea1-cfcaad0ec611 -s
+  311  bootdev run 04c574bc-8c05-4a60-aea1-cfcaad0ec611 
+  312  bootdev run 04c574bc-8c05-4a60-aea1-cfcaad0ec611 -s
+  313  npm i cowsay
+  314  npm run start
+  315  bootdev run 2201ee8c-3be5-4dae-aacc-0346fb7ea123 -s
+  316  ./samplesdownload.sh 
+  317  xxd samples/boots-image-horizontal.png 
+  318  xxd -l 8 samples/boots-image-horizontal.png 
+  319  bootdev run a1b6ba47-d5e4-493e-a2cf-114270d4e7b1
+  320  bootdev run a1b6ba47-d5e4-493e-a2cf-114270d4e7b1 -s
+  321  sudo apt update
+  322  sudo apt install sqlite3
+  323  sqlite3 tubely.db 
+  324  bootdev run 967db7bd-f506-4f8b-acc3-e14ee24ff00c
+  325  bootdev run 967db7bd-f506-4f8b-acc3-e14ee24ff00c -s
+  326  bootdev run 97314861-5ebe-4364-8936-53f39d8b2a04
+  327  go run  .
+  328  bootdev run 97314861-5ebe-4364-8936-53f39d8b2a04
+  329  bootdev run 97314861-5ebe-4364-8936-53f39d8b2a04 -s
+  330  echo "# golang-file-storage" >> README.md
+  331  git init
+  332  git add README.md
+  333  git commit -m "first commit"
+  334  git branch -M main
+  335  git remote add origin https://github.com/Jasperino64/golang-file-storage.git
+  336  git push -u origin main
+  337  git remote add origin git@github.com:Jasperino64/golang-file-storage.git
+  338  git push -u origin main
+  339  cat ~/.ssh/id_ed25519.pub 
+  340  git push -u origin main
+  341  echo "# golang-file-storage" >> README.md
+  342  git init
+  343  git add README.md
+  344  git commit -m "first commit"
+  345  git branch -M main
+  346  git remote add origin git@github.com:Jasperino64/golang-file-storage.git
+  347  git push -u origin main
+  348  rm -rf .git
+  349  git config
+  350  echo "# golang-file-storage" >> README.md
+  351  git init
+  352  git add README.md
+  353  git commit -m "first commit"
+  354  git branch -M main
+  355  git remote add origin git@github.com:Jasperino64/golang-file-storage.git
+  356  git push -u origin main
+  357  git remote add origin https://github.com/Jasperino64/golang-file-storage.git
+  358  git branch -M main
+  359  git push -u origin main
+  360  git remote add origin https://github.com/Jasperino64/golang-file-storage.git
+  361  git branch -M main
+  362  git push -u origin main
+  363  git remote add origin git@github.com:Jasperino64/golang-file-storage.git
+  364  git branch -M main
+  365  git push -u origin main
+  366  git add .
+  367  git commit -m "1"
+  368  git push
+  369  go run .
+  370  git add .
+  371  git commit -m "base64"
+  372  git push
+  373  git add .
+  374  git status
+  375  git commit -m "remove unused code"
+  376  git push
+  377  go run .
+  378  bootdev run 01e6999d-29aa-4f1e-8618-6cb8129e83ed
+  379  bootdev run 01e6999d-29aa-4f1e-8618-6cb8129e83ed -s
+  380  bootdev run 78d69134-fd38-44fd-b764-50348e81097f
+  381  bootdev run 78d69134-fd38-44fd-b764-50348e81097f -s
+  382  bootdev run 77abee5f-d10a-4fd5-adec-97b63130dad1
+  383  bootdev run 77abee5f-d10a-4fd5-adec-97b63130dad1 -s
+  384  bootdev run 77abee5f-d10a-4fd5-adec-97b63130dad1
+  385  bootdev run 77abee5f-d10a-4fd5-adec-97b63130dad1 -s
+  386  go run .
+  387  bootdev run 56c90fb4-ccfb-4378-b9b7-d664516803eb
+  388  cd
+  389  cd workspace/learn-file-storage-s3-golang/
+  390  bootdev run 56c90fb4-ccfb-4378-b9b7-d664516803eb
+  391  bootdev run 56c90fb4-ccfb-4378-b9b7-d664516803eb -s
+  392  bootdev run c80a344f-6848-4c25-b34d-29e0e18a5855
+  393  bootdev run c80a344f-6848-4c25-b34d-29e0e18a5855 -s
+  394  bootdev run c1388098-042f-47fb-96e0-3a37f52c9427
+  395  bootdev run c1388098-042f-47fb-96e0-3a37f52c9427 -a
+  396  bootdev run c1388098-042f-47fb-96e0-3a37f52c9427 -s
+  397  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+  398  unzip awscliv2.zip
+  399  sudo ./aws/install
+  400  ls
+  401  sudo apt intall unzip
+  402  sudo apt install unzip
+  403  sudo ./aws/install
+  404  unzip awscliv2.zip
+  405  sudo ./aws/install
+  406  aws --version
+  407  aws configure
+  408  aws sts get-caller-identity
+  409  cat ~/.aws/credentials 
+  410  bootdev run 0567917e-2392-47f3-af50-d0a199d49d45
+  411  bootdev run 0567917e-2392-47f3-af50-d0a199d49d45 -s
+  412  aws s3 ls
+  413  bootdev run 0a5fc518-69a0-431a-b565-79630399820a
+  414  bootdev run 0a5fc518-69a0-431a-b565-79630399820a -s
+  415  aws s3 ls tubely-20154096
+  416  aws s3 ls tubely-20154096 > /tmp/bucket_contents.txt
+  417  cat /tmp/bucket_contents.txt
+  418  bootdev run 634e3f1a-3ad8-43e3-8a54-28eebe86d5af
+  419  bootdev run 634e3f1a-3ad8-43e3-8a54-28eebe86d5af  -s
+  420  go get github.com/aws/aws-sdk-go-v2/service/s3 github.com/aws/aws-sdk-go-v2/config
+  421  code .
+  422  git add .
+  423  git commit -m "upload to aws s3 bucket"
+  424  git prune
+  425  git push
+  426  aws s3api head-object --bucket tubely-20154096 --key YdqixnEjFNKe3776y6OlsPDDwCgj11hlDzYn2OpppKc.mp4 > /tmp/object_metadata.txt
+  427  aws s3api head-object --bucket tubely-20154096 --key YdqixnEjFNKe3776y6OlsPDDwCgj11hlDzYn2OpppKc.mp4
+  428  bootdev run 44bbc0a9-f066-47e1-8f7b-927ee2255d6c
+  429  bootdev run 44bbc0a9-f066-47e1-8f7b-927ee2255d6c -s
+  430  tsc
+  431  bootdev run 7a2ea20c-a3d0-4dd4-95dd-2f42cf157e54
+  432  bootdev run 7a2ea20c-a3d0-4dd4-95dd-2f42cf157e54 -s
+  433  bootdev run 86482b64-6b30-490f-8356-0ff64f6c2100
+  434  bootdev run 86482b64-6b30-490f-8356-0ff64f6c2100 -s
+  435  bootdev run 1bd94663-872e-421f-8683-cf664d125959
+  436  bootdev run 1bd94663-872e-421f-8683-cf664d125959 -s
+  437  cd 
+  438  cd workspace/
+  439  ls
+  440  npm install -g typescript
+  441  tsc -v
+  442  bootdev run f26d88bd-43d9-4efe-95ac-a610a33f421f
+  443  bootdev run f26d88bd-43d9-4efe-95ac-a610a33f421f -s
+  444  mkdir ts
+  445  cd ts
+  446  npm init -y
+  447  code .
+  448  tsc
+  449  bootdev run a545bc1e-8dd4-4eb4-b682-c5cdf4a1c4a1
+  450  bootdev run a545bc1e-8dd4-4eb4-b682-c5cdf4a1c4a1 -s
+  451  tsc
+  452  npx http-server .
+  453  npm i -D typescript
+  454  bootdev run 3013c45c-8c29-4ba9-b13f-3848dc0b684e
+  455  bootdev run 3013c45c-8c29-4ba9-b13f-3848dc0b684e -s
+  456  tsc
+  457  bootdev run e880b327-02c1-42c5-aead-4a9376d23400
+  458  bootdev run e880b327-02c1-42c5-aead-4a9376d23400 s
+  459  bootdev run e880b327-02c1-42c5-aead-4a9376d23400 -s
+  460  echo "# ts" >> README.md
+  461  git init
+  462  git add README.md
+  463  git commit -m "first commit"
+  464  git branch -M main
+  465  git remote add origin git@github.com:Jasperino64/ts.git
+  466  git push -u origin main
+  467  git add .
+  468  git commit -m "ts"
+  469  git push
+  470  git remote add origin https://github.com/Jasperino64/ts.git
+  471  git branch -M main
+  472  git push -u origin main
+  473  git remote remove origin
+  474  git push -u origin main
+  475  git remote add origin https://github.com/Jasperino64/ts.git
+  476  git push -u origin main
+  477  npm i -D vite
+  478  npm create vite@latest . -- --template vanilla-ts
+  479  npm i
+  480  npm run dev
+  481  bootdev run 7ab4e888-56a1-4be6-b1e9-30c6b0bbced8
+  482  bootdev run 7ab4e888-56a1-4be6-b1e9-30c6b0bbced8 -s
+  483  bootdev run 3b13416a-55a6-4b5a-93ba-faf5741d6a2f
+  484  cd ..
+  485  aws s3 ls s3://YOURBUCKET/backups/
+  486  aws s3 ls s3://tubely-20154096/backups/
+  487  aws s3 ls s3://tubely-20154096/backups/ > /tmp/s3_listing.txt
+  488  bootdev run 0d57b209-b1f4-40f5-99d8-a137dc259531
+  489  bootdev run 0d57b209-b1f4-40f5-99d8-a137dc259531 -s
+  490  sudo apt install ffmpeg
+  491  ffprobe -version
+  492  ffmpeg -version
+  493  bootdev run 53e10939-c33d-4e53-b2d9-60ebbff36376
+  494  bootdev run 53e10939-c33d-4e53-b2d9-60ebbff36376 -s
+  495  ffmpeg -version
+  496  bootdev run 6f4522cb-4000-4f49-bf33-a81ffc85f053
+  497  bootdev run 6f4522cb-4000-4f49-bf33-a81ffc85f053 -s
+  498  ffprobe -v error -print_format json samples/boots-video-horizontal.mp4 
+  499  ffprobe -v error -print_format json -show0-streams samples/boots-video-horizontal.mp4 
+  500  ffprobe -v error -print_format json -show-streams samples/boots-video-horizontal.mp4 
+  501  ffprobe -v error -print_format json -show_streams samples/boots-video-horizontal.mp4 
+  502  go run .
+  503  git add .
+  504  git commit "aspect ratio"
+  505  git commit -m "aspect ratio"
+  506  go run .
+  507  ffmpeg -i samples/boots-video-horizontal.mp4 -c copy -movflags faststart -f mp4 temp.processing
+  508  go run .
+  509  git diff
+  510  git add .
+  511  git commit -m "process file for streaming"
+  512  git push
+  513  go run .
+  514  cd
+  515  cd workspace/
+  516  ls
+  517  cd learn-file-storage-s3-golang/
+  518  ls
+  519  aws s3 cp video.go s3://tublely-20154096
+  520  aws s3 cp video.go s3://tubely-20154096/landscape/
+  521  ipconfig
+  522  ifconfig
+  523  sudo ap install net-tools
+  524  sudo apt install net-tools
+  525  ifconfig
+  526  aws s3 cp video.go s3://tubely-20154096/landscape/
+  527  aws s3 cp video.go s3://tubely-20154096/go/
+  528  bootdev run 638b857a-4020-4994-9c57-fde6937d0af0
+  529  bootdev upgrade
+  530  bootdev run 638b857a-4020-4994-9c57-fde6937d0af0
+  531  bootdev run 638b857a-4020-4994-9c57-fde6937d0af0 -s
+  532  aws s3 ls
+  533  aws iam list-policies --scope Local --no-cli-pager
+  534  aws iam list-policies --scope Local --no-cli-pager | grep tubely
+  535  bootdev run 6d91424a-c5ac-43d4-a39b-5d736f0bf759 -s
+  536  bootdev run 281c3199-8c3d-41a5-9e8b-f8842c4277af
+  537  bootdev run 281c3199-8c3d-41a5-9e8b-f8842c4277af | tubely
+  538  bootdev run 281c3199-8c3d-41a5-9e8b-f8842c4277af | grep tubely
+  539  bootdev run 281c3199-8c3d-41a5-9e8b-f8842c4277af -s
+  540  bootdev run 71a1e425-7798-4fdd-a635-5a6050520794 | grep priv
+  541  bootdev run 71a1e425-7798-4fdd-a635-5a6050520794 -s
+  542  bootdev run 824e3d22-79e2-42f4-a4c9-7e9c1852adb5
+  543  bootdev run 824e3d22-79e2-42f4-a4c9-7e9c1852adb5 -s
+  544  git diff
+  545  git add .
+  546  git commit -m "signed URL"
+  547  go run .
+  548  bootdev run 763f81ba-76af-4162-b3c5-e27822301efd
+  549  bootdev run 763f81ba-76af-4162-b3c5-e27822301efd | grep Dep
+  550  bootdev run 763f81ba-76af-4162-b3c5-e27822301efd | grep -n Dep
+  551  bootdev run 763f81ba-76af-4162-b3c5-e27822301efd | grep -n cloud
+  552  bootdev run 763f81ba-76af-4162-b3c5-e27822301efd -s | Dep
+  553  bootdev run 763f81ba-76af-4162-b3c5-e27822301efd | gre
+  554  bootdev run 763f81ba-76af-4162-b3c5-e27822301efd -s
+  555  bootdev run 12c3079a-d98a-4170-b7cc-82029d53e5c1
+  556  bootdev run 12c3079a-d98a-4170-b7cc-82029d53e5c1 -s
+  557  aws cloudfront list-invalidations --distribution-id d342011p5rh5gh.cloudfront.net > /tmp/invalidations.json
+  558  aws cloudfront list-invalidations --distribution-id d342011p5rh5gh > /tmp/invalidations.json
+  559  aws cloudfront list-invalidations --distribution-id E39KTM4NXOJZ59 > /tmp/invalidations.json
+  560  bootdev run ebba6166-0c34-4af8-897b-811a63e51bab
+  561  bootdev run ebba6166-0c34-4af8-897b-811a63e51bab -s
+  562  aws s3api list-object-versions --bucket tubely20154096 --prefix bootsimg.png --no-cli-pager
+  563  aws s3api list-object-versions --bucket tubely-20154096 --prefix bootsimg.png --no-cli-pager
+  564  aws s3api list-object-versions --bucket tubely-20154096 --prefix bootsimg.png --no-cli-pager /tmp/versions.json
+  565  bootdev run 23ac6b97-bae1-4494-a703-40785bfc250c
+  566  bootdev upgrade
+  567  bootdev run 23ac6b97-bae1-4494-a703-40785bfc250c
+  568  aws s3api list-object-versions --bucket tubely-20154096 --prefix bootsimg.png --no-cli-pager > /tmp/versions.json
+  569  bootdev run 23ac6b97-bae1-4494-a703-40785bfc250c
+  570  bootdev run 23ac6b97-bae1-4494-a703-40785bfc250c -s
+  571  cd ..
+  572  cd
+  573  cd workspace/
+  574  git clone https://github.com/Jasperino64/learn-cicd-starter.git
+  575  ls
+  576  cd learn-cicd-starter/
+  577  code .
+  578  bootdev run 2ff0dbac-b147-4fd4-bcf6-79d77f658748
+  579  bootdev run 2ff0dbac-b147-4fd4-bcf6-79d77f658748 -s
+  580  cd
+  581  cd workspace/learn-cicd-starter/
+  582  go build -o notely && ./notely
+  583  git switch -c addtests
+  584  git push origin addtests
+  585  git add .
+  586  git commit -m "update README"
+  587  git push
+  588  git push --set-upstream origin addtests
+  589  git add .
+  590  git commit -m "ci.yml"
+  591  git push
+  592  git add .
+  593  go commit
+  594  git commit -m "ci.yml go version"
+  595  git push
+  596  go test ./...
+  597  bootdev run 3180c16a-cd04-4cbd-adee-ddb4d1b1ba34
+  598  bootdev run 3180c16a-cd04-4cbd-adee-ddb4d1b1ba34 -s
+  599  go test ./...
+  600  git add .
+  601  git commit -m "test ci"
+  602  git push
+  603  go test ./...
+  604  git add .
+  605  git commit -m "fix test ci"
+  606  git  push
+  607  go test ./...
+  608  go test -cover ./...
+  609  git add .
+  610  git commit -m "Add test coverage flag"
+  611  git push
+  612  git add .
+  613  git commit -m "README badge"
+  614  git push
+  615  go fmt ./...
+  616  cd ..
+  617  git clone https://github.com/Jasperino64/full-stripe-tutorial.git
+  618  cd full-stripe-tutorial/
+  619  source /home/jasper/.bashrc
+  620  bun i
+  621  bun run
+  622  bun run start
+  623  bun run dev
+  624  curl -fsSL https://bun.sh/install | bash
+  625  cd
+  626  cd workspace/
+  627  ls
+  628  cd full-stripe-tutorial/
+  629  bun i
+  630  cd ..
+  631  mkdir stripe-simplified
+  632  cd stripe-simplified
+  633  source /home/jasper/.bashrc
+  634  bunx create-next-app@14.2.15 .
+  635  bunx --bun shadcn@latest init
+  636  code .
+  637  bootdev run f53688e2-4851-4704-ae1e-7837f84c64ca
+  638  bootdev run f53688e2-4851-4704-ae1e-7837f84c64ca -s
+  639  test -z $(go fmt ./...)
+  640  echo $?
+  641  test -z $(go fmt ./...)
+  642  echo $?
+  643  bootdev run 870aede4-4948-4102-8960-4996c708e49d
+  644  bootdev run 870aede4-4948-4102-8960-4996c708e49d -s
+  645  git add .
+  646  git commit -m "go fmt"
+  647  git push
+  648  git add .
+  649  git commit -m "test style job"
+  650  git push
+  651  git add .
+  652  go fmt ./...
+  653  git commit -m "undo space"
+  654  git push
+  655  go install honnef.co/go/tools/cmd/staticcheck@latest
+  656  staticcheck ./...
+  657  git add .
+  658  staticcheck ./...
+  659  git commit -m "staticcheck"
+  660  git push
+  661  go fmt ./....
+  662  git add .
+  663  git commit -m "fix formatting"
+  664  git push
+  665  go install github.com/securego/gosec/v2/cmd/gosec@latest
+  666  gosec ./...
+  667  bootdev run a9027b1f-e5d7-4ece-8a3b-11292a882acc
+  668  gosec ./...
+  669  bootdev run a9027b1f-e5d7-4ece-8a3b-11292a882acc
+  670  bootdev run a9027b1f-e5d7-4ece-8a3b-11292a882acc -s
+  671  git add .
+  672  git push
+  673  gosec ./...
+  674  git add .
+  675  git commit -m "fix gosec findings"
+  676  git push
+  677  go fmt
+  678  git diff
+  679  git add .
+  680  git commit -m "go fmt"
+  681  git push
+  682  go fmt
+  683  git add .
+  684  git commit -m "fix"
+  685  git push
+  686  gosec ./..
+  687  git add .
+  688  git commit -m "move gosec to after test"
+  689  git push
+  690  ./scripts/buildprod.sh
+  691  docker build -t DOCKERHUB_NAMESPACE/notely:latest .
+  692  curl -fsSL https://get.docker.com -o get-docker.sh
+  693  sudo sh ./get-docker.sh --dry-run
+  694  docker build -t DOCKERHUB_NAMESPACE/notely:latest .
+  695  docker build -t exspider64/notely:latest .
+  696  ./scripts/buildprod.sh 
+  697  docker build -t exspider64/notely:latest .
+  698  docker run -e PORT=8080 -p 8080:8080 exspider64/notely:latest
+  699  GOOS=linux GOARCH=arm64 go build -o notely .
+  700  docker build -t exspider64/notely:latest .
+  701  docker build -t exspider64/notely:latest . --platform=linux/arm64
+  702  docker build -t exspider64/notely:latest . --platform=linux/arm64 --debug
+  703  docker --debug build -t exspider64/notely:latest . --platform=linux/arm64
+  704  docker build -t exspider64/notely:latest . --platform=linux/arm64
+  705  docker build -t exspider64/notely:latest .
+  706  docker run -e PORT=8080 -p 8080:8080 exspider64/notely:latest
+  707  git switch -c add-cd
+  708  git add .
+  709  git diff --cache
+  710  git diff -cache
+  711  git diff 
+  712  git diff -cached
+  713  git diff --cached
+  714  git add .
+  715  git commit -m "cd.yml"
+  716  git push
+  717  git push --set-upstream origin add-cd
+  718  git push
+  719  git switch main
+  720  git pull
+  721  git add .
+  722  git commit -m "test push to main"
+  723  git push
+  724  docker
+  725  bootdev run 93b823de-47a9-4980-8e72-a3bbb0e1fb71
+  726  bootdev run 93b823de-47a9-4980-8e72-a3bbb0e1fb71 -s
+  727  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+  728  export NVM_DIR="$HOME/.nvm"
+  729  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+  730  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm b
+  731  cd
+  732  ls
+  733  vi history.txt 
+  734  curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-linux-x86_64.tar.gz
+  735  tar -xf google-cloud-cli-linux-x86_64.tar.gz
+  736  ./google-cloud-sdk/install.sh
+  737  gcloud init
+  738  gcloud init --console-only
+  739  source ~/.bashrc
+  740  gcloud init --console-only
+  741  cd ..
+  742  mkdir ts-server
+  743  cd ts-server
+  744  nvm
+  745  code .
+  746  nvm use
+  747  node --version
+  748  bootdev run b8eaaca8-ca2d-47d0-8583-7b78eec71680
+  749  bootdev run b8eaaca8-ca2d-47d0-8583-7b78eec71680 -s
+  750  history > ~/history.txt
+  751  npm init -y
+  752  gcloud init --console-only
+  753  gcloud config list
+  754  bootdev run 4f346a23-8838-4df9-b497-286b8ef7cda4
+  755  bootdev run 4f346a23-8838-4df9-b497-286b8ef7cda4 -s
+  756  gcloud builds submit --tag us-central1-docker.pkg.dev/notely/notely-ar-repo/exspider64/notely:latest .
+  757  gcloud builds submit --tag us-central1-docker.pkg.dev/notely-469822/notely-ar-repo/exspider64/notely:latest .
+  758  docker build -t exspider64/notely:latest .
+  759  gcloud builds submit --tag us-central1-docker.pkg.dev/notely-469822/notely-ar-repo/exspider64/notely:latest .
+  760  history > notes.txt
